@@ -1,0 +1,204 @@
+body {
+    background-color: #cecece;
+}
+.icon-bar {
+    width: 100%; 
+    background-color: #ffffff; 
+    overflow: auto; 
+}
+.icon-bar1 {
+    width: 100%; 
+    margin-top: -900px;
+    background-color: #ffffff; 
+    overflow: auto; 
+}
+.icon-bar a {
+    float: left; 
+    text-align: center;
+    width: 33%; 
+    padding: 12px 0; 
+    transition: all 0.3s ease; 
+    color: rgb(0, 0, 0); 
+    font-size: 36px; 
+}
+.icon-bar1 a {
+    float: left; 
+    text-align: center;
+    width: 33%; 
+    padding: 12px 0; 
+    transition: all 0.3s ease; 
+    color: rgb(0, 0, 0); 
+    font-size: 36px; 
+}
+.icon-bar a:hover {
+    background-color: #cecece; 
+}
+.active {
+    background-color: #cecece; 
+}
+form {
+    border: 3px solid #f1f1f1;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    opacity: 0.8;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+.container {
+    padding: 16px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+:root {
+	--blue: #0071FF;
+	--light-blue: #B6DBF6;
+	--dark-blue: #005DD1;
+	--grey: #f2f2f2;
+}
+body1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #cecece;
+}.container1 {
+	max-width: 400px;
+	width: 100%;
+	text-align: center;
+	background: #fff;
+	padding: 30px;
+	border-radius: 30px;
+}
+.img-area {
+	position: relative;
+	width: 100%;
+	height: 240px;
+	background: var(--grey);
+	margin-bottom: 30px;
+	border-radius: 15px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.img-area .icon {
+	font-size: 100px;
+}
+.img-area h3 {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 6px;
+}
+.img-area p {
+	color: #999;
+}
+.img-area p span {
+	font-weight: 600;
+}
+.img-area img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	z-index: 100;
+}
+.img-area::before {
+	content: attr(data-img);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	color: #fff;
+	font-weight: 500;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+	opacity: 0;
+	transition: all .3s ease;
+	z-index: 200;
+}
+.img-area.active:hover::before {
+	opacity: 1;
+}
+.select-image {
+	display: block;
+	width: 100%;
+	padding: 16px 0;
+	border-radius: 15px;
+	background: black;
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+.select-image:hover {
+	background: #cecece;
+}
+* {
+	box-sizing: border-box;
+  }
+  form.example input[type=text] {
+	padding: 10px;
+	font-size: 17px;
+	border: 1px solid grey;
+	float: left;
+	width: 80%;
+	background: #f1f1f1;
+  }
+  form.example button {
+	float: left;
+	width: 20%;
+	padding: 10px;
+	background: #000000;
+	color: white;
+	font-size: 17px;
+	border: 1px solid grey;
+	border-left: none; 
+	cursor: pointer;
+  }
+  form.example button:hover {
+	background: #000000;
+  }
+  form.example::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
